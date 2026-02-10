@@ -12,6 +12,11 @@ return {
     config = function()
       -- Initialize Mason
       require("mason").setup({
+        -- NEEDED FOR C# (roslyn)
+        registries = {
+          "github:mason-org/mason-registry",
+          "github:Crashdummyy/mason-registry", -- This one contains Roslyn
+        },
         ui = {
           border = "rounded",
           icons = {
@@ -34,6 +39,8 @@ return {
         "html-lsp",            -- HTML
         "phpactor",            -- PHP
         "bash-language-server",-- Bash/Zsh
+        "jdtls",               -- Java
+        "roslyn-lsp",              -- C#
         
         -- Formatters & Linters
         "stylua",              -- Lua formatting
