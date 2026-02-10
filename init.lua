@@ -4,6 +4,13 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- Manually set a file type to .md
+vim.filetype.add({
+    extension = {
+        md = 'markdown',
+    },
+})
+
 -- =====================================
 -- Package manager (lazy vim)
 -- =====================================
