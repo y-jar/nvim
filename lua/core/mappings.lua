@@ -1,10 +1,16 @@
+-- ════════════════════════════════════════
+-- ########################################
+
 -- all keybinds go here :)
 -- and other key-related things can go here too :)
-
--- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
--- requirement to mass map key groups for keybinds
+-- ########################################
+-- ════════════════════════════════════════
+-- ════════════════════════════════════════
+-- ########################################
+
+-- IMPORTANT VARS/THINGS
 local wk = require("which-key")
 
 local function map(m, k, v)
@@ -21,6 +27,15 @@ end
 
 -- noremap = true - prevents recursive mappings (important for safety)
 -- silent = true - doesn't show the command in the command line
+
+-- For FTerm keybindings
+local keymap = vim.keymap.set
+
+-- ########################################
+-- ════════════════════════════════════════
+-- ════════════════════════════════════════
+-- ########################################
+
 
 -- =====================================
 -- MAPPINGS!
@@ -80,6 +95,11 @@ map("v", "<S-Tab>", "<gv")
 map("v", "<", "<gv")
 map("v", ">", ">gv")
 
+-- ########################################
+-- ════════════════════════════════════════
+-- ════════════════════════════════════════
+-- ########################################
+
 -- NVIM-TREE KEYBIND
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle File [E]xplorer" })
 
@@ -99,5 +119,20 @@ wk.add({
 	{ "<Leader><Leader>i", "<cmd>IconPickerNormal<cr>", desc = "[I]cons Picker" }, -- basic icon picker
 	{ "<Leader><Leader>iy", "<cmd>IconPickerYank<cr>", desc = "[I]con [Y]oink" }, -- yoinks icon to keyboard
 	{ "<C-i>", "<cmd>IconPickerInsert<cr>", desc = "[I]con Picker [I]ncsert" }, -- insert mode icon placement
-	--
+	-- 
 })
+-- KEYBINDING: Toggle the terminal
+-- This creates a shortcut: <Alt-i> to open/close the terminal
+-- You can change 'i' to whatever you prefer.
+-- wrap the toggle in a function so it doesn't error if the plugin isn't loaded yet
+keymap('n', '<A-i>', function() 
+    require("FTerm").toggle() 
+end, { desc = "Terminal: Toggle Floating" })
+
+-- close the terminal while inside it
+keymap('t', '<A-i>', function() 
+    require("FTerm").toggle() 
+end, { desc = "Terminal: Toggle Floating" })
+
+-- ########################################
+-- ════════════════════════════════════════

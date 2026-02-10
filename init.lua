@@ -1,4 +1,19 @@
--- This is the start of my nvim config
+-- ┌───────────────────────────┐
+-- │                           │
+-- │                           │
+-- │       This is My          │
+-- │       NeoVim Config!      │
+-- │                           │
+-- │                           │
+-- │                           │
+-- │       Feel free to        │
+-- │       use this. or        │
+-- │       fork it :3          │
+-- │                           │
+-- └───────────────────────────┘
+
+-- All of the plugins are housed within the plugin/* directory, so if you want to add a plugin,
+-- just make a new file with the plugin name, and add the plugin contents within a return {}
 
 -- leader set (this is for which-key to work when mappings.lua is called)
 vim.g.mapleader = " "
@@ -6,9 +21,9 @@ vim.g.maplocalleader = " "
 
 -- Manually set a file type to .md
 vim.filetype.add({
-    extension = {
-        md = 'markdown',
-    },
+	extension = {
+		md = "markdown",
+	},
 })
 
 -- =====================================
@@ -37,6 +52,6 @@ require("lazy").setup("plugin", opts) -- this loads all plugins within plugin/
 -- =====================================
 -- Reqs (seprate files within lua/)
 -- =====================================
-require("core.mappings")-- for mappings like theme switching and enabling and disabling options and entering menus
-require("core.options")-- nvim or base plugin options that would go here
-require("core.autocmd")--auto cmd stuff (no clue)
+require("core.mappings") -- for mappings like theme switching and enabling and disabling options and entering menus
+require("core.options") -- nvim or base plugin options that would go here
+require("core.autocmd") --auto cmd stuff (no clue)
