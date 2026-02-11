@@ -36,10 +36,6 @@ local keymap = vim.keymap.set
 -- ════════════════════════════════════════
 -- ########################################
 
-
--- =====================================
--- MAPPINGS!
--- =====================================
 -- NOTE: LEADER IS SET IN THE INIT.LUA FILE
 
 -- Clear highlights on search when pressing <Esc> in normal mode
@@ -119,20 +115,32 @@ wk.add({
 	{ "<Leader><Leader>i", "<cmd>IconPickerNormal<cr>", desc = "[I]cons Picker" }, -- basic icon picker
 	{ "<Leader><Leader>iy", "<cmd>IconPickerYank<cr>", desc = "[I]con [Y]oink" }, -- yoinks icon to keyboard
 	{ "<C-i>", "<cmd>IconPickerInsert<cr>", desc = "[I]con Picker [I]ncsert" }, -- insert mode icon placement
-	-- 
+	--
 })
 -- KEYBINDING: Toggle the terminal
 -- This creates a shortcut: <Alt-i> to open/close the terminal
 -- You can change 'i' to whatever you prefer.
 -- wrap the toggle in a function so it doesn't error if the plugin isn't loaded yet
-keymap('n', '<A-i>', function() 
-    require("FTerm").toggle() 
+keymap("n", "<A-i>", function()
+	require("FTerm").toggle()
 end, { desc = "Terminal: Toggle Floating" })
 
 -- close the terminal while inside it
-keymap('t', '<A-i>', function() 
-    require("FTerm").toggle() 
+keymap("t", "<A-i>", function()
+	require("FTerm").toggle()
 end, { desc = "Terminal: Toggle Floating" })
 
 -- ########################################
 -- ════════════════════════════════════════
+
+--
+--
+--
+--
+--
+--
+--
+--
+--
+-- End Of File
+
