@@ -20,11 +20,16 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- Manually set a file type to .md
-vim.filetype.add({
-	extension = {
-		md = "markdown",
-	},
-})
+-- I was running into issues with the markdown, this might be redundent
+-- vim.filetype.add({
+-- 	extension = {
+-- 		md = "markdown",
+-- 	},
+-- })
+
+-- Disables the use of swapfile backup, i dont need this, but if you
+-- need more ways to restore progress if it crashes this is what you can use :)
+vim.opt.swapfile = false
 
 -- =====================================
 -- Package manager (lazy vim)

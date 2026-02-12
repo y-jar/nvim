@@ -77,10 +77,7 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 vim.keymap.set("n", "<leader>rc", ":source $MYVIMRC<CR>", { desc = "[R]eload [C]onfigs" })
 
--- =====================================
 -- SMART INDENTATION
--- =====================================
-
 -- In Visual Mode, allow Tab and Shift-Tab to indent/un-indent
 -- 'gv' makes sure the text stays highlighted so you can hit Tab multiple times
 map("v", "<Tab>", ">gv")
@@ -119,14 +116,14 @@ wk.add({
 })
 -- KEYBINDING: Toggle the terminal
 -- This creates a shortcut: <Alt-i> to open/close the terminal
--- You can change 'i' to whatever you prefer.
+-- You can change 't'(t- as in terminal :>) to whatever you prefer.
 -- wrap the toggle in a function so it doesn't error if the plugin isn't loaded yet
-keymap("n", "<A-i>", function()
+keymap("n", "<A-t>", function()
 	require("FTerm").toggle()
 end, { desc = "Terminal: Toggle Floating" })
 
 -- close the terminal while inside it
-keymap("t", "<A-i>", function()
+keymap("t", "<A-t>", function()
 	require("FTerm").toggle()
 end, { desc = "Terminal: Toggle Floating" })
 
@@ -143,4 +140,3 @@ end, { desc = "Terminal: Toggle Floating" })
 --
 --
 -- End Of File
-

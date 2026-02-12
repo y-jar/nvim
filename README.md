@@ -94,42 +94,12 @@ git clone https://github.com/y-jar/nvim.git ~/.config/nvim
 echo "Clean install complete!"
 ```
 
-**Zsh:**
-```zsh
-# Remove all Neovim config and data
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.cache/nvim
-
-# Clone this config
-git clone https://github.com/y-jar/nvim.git ~/.config/nvim
-
-echo "Clean install complete!"
-```
 
 ### Restore Backup 
 If you used the backup install and want to restore your original configuration:
 
 **Bash:**
 ```bash
-# Remove this config
-rm -rf ~/.config/nvim
-rm -rf ~/.local/share/nvim
-rm -rf ~/.local/state/nvim
-rm -rf ~/.cache/nvim
-
-# Restore backups
-[ -d ~/.config/nvim.backup ] && mv ~/.config/nvim.backup ~/.config/nvim
-[ -d ~/.local/share/nvim.backup ] && mv ~/.local/share/nvim.backup ~/.local/share/nvim
-[ -d ~/.local/state/nvim.backup ] && mv ~/.local/state/nvim.backup ~/.local/state/nvim
-[ -d ~/.cache/nvim.backup ] && mv ~/.cache/nvim.backup ~/.cache/nvim
-
-echo "Backup restored!"
-```
-
-**Zsh:**
-```zsh
 # Remove this config
 rm -rf ~/.config/nvim
 rm -rf ~/.local/share/nvim
@@ -166,15 +136,65 @@ rm -rf ~/.cache/nvim
 
 ### Features
 Here are all the features I Deem Notable for this configuration.
-[MY_EPIC_PLACEHOLDER]
-
+ - telascope (Searching)
+ - nvim-tree (directories manager)
+ - IDE (things for some of the languages i use)
+ - markdown rendering
+ - theme manager
+ - twilight
+ - FTerm (build in terminal)
+ - relative numbers when in normal mode
+ - icon picker 
+ 
 ### Keybindings
 Notable Keybindings
-[MY_EPIC_PLACEHOLDER]
+ - space s (opens the search menu for everything)
+ - space v (opens the visuals menu if you want to edit some visuals)
+ - space rc (reloads the nvim config)
+ - space e (toggles the file explorer on the left)
+ - alt t (opens the terminal)
 
 ### Plugins
 Here is the full list of all plugins:
-[MY_EPIC_PLACEHOLDER]
+
+#### UI/Theme
+- dashboard-nvim.lua
+- theme-hub.lua
+- lualine.lua
+- twilight.lua
+- which-key.lua
+- icon-picker.lua
+
+#### File Management
+- nvim-tree.lua
+- oil.lua
+- telescope.lua
+
+#### LSP/Completion
+- lspconfig.lua
+- mason.lua
+- nvim-cmp.lua
+- conform.lua
+
+#### Language Support
+- treesitter.lua
+- nvim-java.lua
+- render-markdown.lua
+
+#### Editing
+- nvim-autopairs.lua
+- comment.lua
+- nvim-mini.lua
+
+#### Git
+- gitsigns.lua
+
+#### Terminal/Tools
+- FTerm.lua
+- reslive.lua
+
+#### Utilities
+- nvim-numbertoggle.lua
 
 ### License
 

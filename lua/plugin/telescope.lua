@@ -96,7 +96,7 @@ return {
 					prompt_title = "NeoVim Config",
 					cwd = "~/.config",
 					-- Optional: tells it to look for hidden files too
-					hidden = false,
+					hidden = true,
 				})
 			end, { desc = "[S]earch [C]onfig Files" })
 
