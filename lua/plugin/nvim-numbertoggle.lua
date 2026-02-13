@@ -1,12 +1,13 @@
 -- ========================================================================== --
--- PLUGIN: COMMENT.NVIM
--- Purpose: Quick commenting and uncommenting of code
+-- PLUGIN: nvim-numbertoggle.NVIM
+-- Purpose: toggles numbers when in a state
 -- ========================================================================== --
 
 return {
-    -- 
-    {
-        -- 
-        'sitiom/nvim-numbertoggle'
-    }
+	--
+	{
+		--
+		"sitiom/nvim-numbertoggle",
+	},
 }
+

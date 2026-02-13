@@ -90,3 +90,8 @@ vim.diagnostic.config({
 	-- Auto open the float, so you can easily read the errors when jumping with `[d` and `]d`
 	jump = { float = true },
 })
+
+-- This is for the swapfile feature that enables the use of the backup feature.
+-- you ca enable this by changing it to enable, to have that extra layer of security, but i get bothered by it.
+-- Enjoy :)
+vim.opt.swapfile = false

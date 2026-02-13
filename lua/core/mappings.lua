@@ -114,6 +114,7 @@ wk.add({
 	{ "<C-i>", "<cmd>IconPickerInsert<cr>", desc = "[I]con Picker [I]ncsert" }, -- insert mode icon placement
 	--
 })
+
 -- KEYBINDING: Toggle the terminal
 -- This creates a shortcut: <Alt-i> to open/close the terminal
 -- You can change 't'(t- as in terminal :>) to whatever you prefer.

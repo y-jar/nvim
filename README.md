@@ -23,10 +23,15 @@ nvim/
 
 ## Install Guide
 
-> #### The Requirements
-> C compiler?
-> A [Nerd Font](https://www.nerdfonts.com/) (optional, but recommended)
-> All reqs for telascope
+> #### The Requirements/Dependencies
+> [!NOTE] Depandencies
+> 1. Neovim >= 0.10.0
+> 2. git
+> 3. Node.js + npm
+> 4. Python 3 + pip
+> 5. C compiler (gcc/clang/MSVC)
+> 6. ripgrep + fd (for Telescope)
+> 7. curl + tar (for Treesitter)
 
 ### Quick Install
 
@@ -61,21 +66,6 @@ git clone https://github.com/y-jar/nvim.git ~/.config/nvim
 
 echo "Backup complete! Your old config is saved with .backup extension"
 ```
-
-**Zsh:**
-```zsh
-# Backup existing config
-[ -d ~/.config/nvim ] && mv ~/.config/nvim ~/.config/nvim.backup
-[ -d ~/.local/share/nvim ] && mv ~/.local/share/nvim ~/.local/share/nvim.backup
-[ -d ~/.local/state/nvim ] && mv ~/.local/state/nvim ~/.local/state/nvim.backup
-[ -d ~/.cache/nvim ] && mv ~/.cache/nvim ~/.cache/nvim.backup
-
-# Clone this config
-git clone https://github.com/y-jar/nvim.git ~/.config/nvim
-
-echo "Backup complete! Your old config is saved with .backup extension"
-```
-
 
 ### Nuke Install (Clean Slate)
 This will completely remove your existing Neovim configuration and data. **Use with caution please!** <3 

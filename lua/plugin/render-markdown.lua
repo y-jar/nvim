@@ -1,6 +1,6 @@
 -- ========================================================================== --
--- PLUGIN: COMMENT.NVIM
--- Purpose: Quick commenting and uncommenting of code
+-- PLUGIN: render-markdown
+-- Purpose: Used for rendering the format using within '.md' files, (Very nice)
 -- ========================================================================== --
 
 return {

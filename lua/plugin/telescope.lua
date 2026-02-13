@@ -1,6 +1,6 @@
 -- ========================================================================== --
--- PLUGIN: COMMENT.NVIM
--- Purpose: Quick commenting and uncommenting of code
+-- PLUGIN: telescope.nvim
+-- Purpose: Used for seaching and some querys for neovim files
 -- ========================================================================== --
 
 return {

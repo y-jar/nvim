@@ -27,10 +27,6 @@ vim.g.maplocalleader = " "
 -- 	},
 -- })
 
--- Disables the use of swapfile backup, i dont need this, but if you
--- need more ways to restore progress if it crashes this is what you can use :)
-vim.opt.swapfile = false
-
 -- =====================================
 -- Package manager (lazy vim)
 -- =====================================
@@ -60,3 +56,5 @@ require("lazy").setup("plugin", opts) -- this loads all plugins within plugin/
 require("core.mappings") -- for mappings like theme switching and enabling and disabling options and entering menus
 require("core.options") -- nvim or base plugin options that would go here
 require("core.autocmd") --auto cmd stuff (no clue)
+
+-- END OF FILE

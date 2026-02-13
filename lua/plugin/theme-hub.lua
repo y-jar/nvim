@@ -1,6 +1,7 @@
 -- ========================================================================== --
--- PLUGIN: COMMENT.NVIM
--- Purpose: Quick commenting and uncommenting of code
+-- PLUGIN: theme-hub.NVIM
+-- Purpose: sued for picking and manageing themes when used or activated.
+-- use <Leader> v h for picking a theme
 -- ========================================================================== --
 
 return {
@@ -22,4 +23,3 @@ return {
 		end,
 	},
 }
-
