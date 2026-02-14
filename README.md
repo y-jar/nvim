@@ -23,8 +23,8 @@ nvim/
 
 ## Install Guide
 
-> #### The Requirements/Dependencies
-> [!NOTE] Depandencies
+### The Requirements/Dependencies
+> **Depandencies**
 > 1. Neovim >= 0.10.0
 > 2. git
 > 3. Node.js + npm
@@ -32,6 +32,23 @@ nvim/
 > 5. C compiler (gcc/clang/MSVC)
 > 6. ripgrep + fd (for Telescope)
 > 7. curl + tar (for Treesitter)
+
+####Basic Install for these
+*(If you need them that is)*
+* Fedora, CentOS, Red Hat:
+```bash
+sudo dnf install git git-cli nodejs npm python3 python3-pip gcc clang
+```
+
+* Ubuntu and Debian:
+```bash
+sudo apt-get update && sudo apt-get install -y git nodejs npm python3 python3-pip clang g++
+```
+
+* Arch Linux:
+```bash
+sudo pacman -S git nodejs npm python python-pip base-devel ripgrep fd curl tar
+```
 
 ### Quick Install
 
