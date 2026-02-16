@@ -12,12 +12,13 @@ this isnt me making the most efficiant thing, but it does the job for me, and ma
 <!-- the file directories format -->
 
 ### Directories Layout
-
+```
 nvim/
 ├── init.lua
 └── lua/
     ├── core/ (maincomponents like mappings or options)
     └── plugin/ (houses plugins)
+```
 
 ---
 
