@@ -119,12 +119,12 @@ wk.add({
 -- This creates a shortcut: <Alt-i> to open/close the terminal
 -- You can change 't'(t- as in terminal :>) to whatever you prefer.
 -- wrap the toggle in a function so it doesn't error if the plugin isn't loaded yet
-keymap("n", "<A-t>", function()
+keymap("n", "<leader>t", function()
 	require("FTerm").toggle()
-end, { desc = "Terminal: Toggle Floating" })
+end, { desc = "[T]erminal: Toggle Floating" })
 
 -- close the terminal while inside it
-keymap("t", "<A-t>", function()
+keymap("t", "<leader>t", function()
 	require("FTerm").toggle()
 end, { desc = "Terminal: Toggle Floating" })
 
